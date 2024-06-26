@@ -1,15 +1,5 @@
 declare module 'astro:content' {
 	interface Render {
-		'.mdx': Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	}
-}
-
-declare module 'astro:content' {
-	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -150,83 +140,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"docs-for-code-changes/about-documenting-code-changes.mdx": {
-	id: "docs-for-code-changes/about-documenting-code-changes.mdx";
-  slug: "docs-for-code-changes/about-documenting-code-changes";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"docs-for-code-changes/experimental-feature-docs.mdx": {
-	id: "docs-for-code-changes/experimental-feature-docs.mdx";
-  slug: "docs-for-code-changes/experimental-feature-docs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"docs-for-code-changes/new-feature-docs.mdx": {
-	id: "docs-for-code-changes/new-feature-docs.mdx";
-  slug: "docs-for-code-changes/new-feature-docs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"docs-for-code-changes/patch-changes.mdx": {
-	id: "docs-for-code-changes/patch-changes.mdx";
-  slug: "docs-for-code-changes/patch-changes";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"docs-for-code-changes/pull-requests.mdx": {
-	id: "docs-for-code-changes/pull-requests.mdx";
-  slug: "docs-for-code-changes/pull-requests";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"first-time/1-about.mdx": {
-	id: "first-time/1-about.mdx";
-  slug: "first-time/1-about";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"first-time/2-good-first-contributions.mdx": {
-	id: "first-time/2-good-first-contributions.mdx";
-  slug: "first-time/2-good-first-contributions";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"first-time/3-file-an-issue.mdx": {
-	id: "first-time/3-file-an-issue.mdx";
-  slug: "first-time/3-file-an-issue";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"first-time/4-edit-single-page.mdx": {
-	id: "first-time/4-edit-single-page.mdx";
-  slug: "first-time/4-edit-single-page";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"first-time/5-larger-contributions.mdx": {
-	id: "first-time/5-larger-contributions.mdx";
-  slug: "first-time/5-larger-contributions";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"first-time/6-pr-review-process.mdx": {
-	id: "first-time/6-pr-review-process.mdx";
-  slug: "first-time/6-pr-review-process";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "guides/i18n.md": {
 	id: "guides/i18n.md";
   slug: "guides/i18n";
@@ -255,13 +168,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"index.mdx": {
-	id: "index.mdx";
-  slug: "index";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "reference/code-samples.md": {
 	id: "reference/code-samples.md";
   slug: "reference/code-samples";
